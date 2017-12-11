@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<HTML lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Jeux</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="canvas.js"></script>
+
+</head>
+<body onload="startGame();">
+
+<header id="entete">
+    <div id="logo">
+        <img class="logo" src="images/arcso_logo1.png" alt="Logo de ARCSO" />
+    </div>
+    <div id="menu">
+        <nav >
+            <ul>
+                <li><a href="multidedia.html">Jeux et Video</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="bloc_page">
+
+    <div id="banniere_image">
+        <img id="img-banner" src="images/video.png"  alt="" />
+    </div>
+
+    <section id="contenu">
+
+        <article id="content">
+            <div onload="startGame();">
+                <div id="message">messages will go here</div></br>
+                      <div>
+							 <a href="javascript:startGame();"> <span class="red">JOUEZ !</span></a>
+
+							 <table border="1">
+								 <tr>
+									 <td id="s1" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s2" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s3" class="Square" onclick="nextMove(this);"></td>
+								 </tr>
+								 <tr>
+									 <td id="s4" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s5" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s6" class="Square" onclick="nextMove(this);"></td>
+								 </tr>
+								 <tr>
+									 <td id="s7" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s8" class="Square" onclick="nextMove(this);"></td>
+									 <td id="s9" class="Square" onclick="nextMove(this);"></td>
+								 </tr>
+							 </table>
+            </div>
+
+						 </div>
+
+                <div id="video_box">
+
+                <video  id="monvideo"  controls="controls"  preload="auto" poster="images/video.jpg" >
+                    <source src="video.mp4" type="video/mp4"/>
+					<!--<source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />-->
+                    <!-- <source src="media/video/road.mp4" type="video/mp4">
+                     <source src="media/video/road.webm" type="video/webm">
+                     <source src="media/video/road.ogv" type="video/ogg">-->
+                    <track id="sous-titre" src="txt_video_zacharie.vtt" kind="subtitles" srclang="fr" default="default"/>
+
+                </video>
+            </div>
+
+        </article>
+        <aside id="sidebar">
+
+            <h1>Plan de maison</h1>
+            <img src="images/page.jpeg" alt=""
+                 id="fleche_bulle" />
+            <p> le plan de maison est un plan dessiné généralement par un Architecte.</p>
+
+
+
+        </aside>
+
+    </section>
+
+    <footer id="pied_page">
+        <div id="tweet">
+            <h1>Conditions d'utilisation</h1>
+            <p>Confidentialité</p>
+            <p>Publicité</p>
+            <p>A Propos</p>
+
+
+        </div>
+        <div id="mes_photos">
+            <h1>Contactez-nous</h1>
+            <p><a href="https://www.facebook.com/">Cliquer--><img src="images/facebook.jpg"  height= "25"></a></p>
+        </div>
+        <div id="mes_Contact">
+            <h1>Mes Ingenieurs/Architectes</h1>
+            <ul>
+                <li><a href="#">FLEURIME Zacharie(3702-4837)</a></li>
+                <li><a href="#">PAULIN Ralph(3702-4863)</a></li>
+                <li><a href="#">RAPHAEL Josias(3640-0748)</a></li>
+                <li><a href="#">VALCIN Kervens(3783-7697</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>

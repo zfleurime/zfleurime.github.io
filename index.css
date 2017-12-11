@@ -1,0 +1,316 @@
+ body {
+	margin:0;
+    padding:0;
+    background-color:#0099FF;	
+	  
+ } 
+ 
+   #entete
+   {
+    display: flex;
+    width:90%;
+	height:80px;
+	margin:auto;
+	background-color:white;
+  }
+  #logo{
+	  
+	float:left; 
+	 
+	  
+  }
+  
+  .logo{
+	  height:70px;
+	 width:190px;  
+	  
+  }
+  
+  #menu {
+	  float : right;
+	  color: blue;
+	  margin-right:20px;
+
+  }
+  
+   #menu ul li{
+	   
+	  display : inline-block;
+	  padding:10px;
+      margin:15px;
+	  color:green;
+      text-decoration:none;
+      float : right;
+	   
+   }
+ /* Navigation */
+ nav
+ {
+     display: inline-block;
+     width: 740px;
+     text-align: right;
+ }
+ nav ul
+ {
+     list-style-type: none;
+ }
+ nav li
+ {
+     display: inline-block;
+     margin-right: 15px;
+ }
+ nav a
+ {
+     font-size: 1.3em;
+     color: #0033FF;
+     padding-bottom: 3px;
+     text-decoration: none;
+ }
+ nav a:hover
+ {
+     color: #760001;
+     border-bottom: 3px solid #760001;
+ }
+
+   #banniere_image{
+	 clear:both;
+     margin-top:5px;
+	 width:100%;
+	 height:140px;
+	   
+   }
+   
+   #img-banner{
+	 height:140px;
+     width: 100%;
+	   
+	   
+   }
+   
+   
+  #bloc_page
+  {
+    width: 90%;
+    margin: auto;
+	background-color:white;
+  }
+  
+  #contenu {
+	  display: flex;
+	  width  : 100%;
+      border:1px solid #ccc;
+	  
+  }
+
+section p,h1{
+    font-family: "Times New Roman";
+    color:black;
+    font-style: normal;
+    font-size: 1.1em;
+    display: block;
+}
+  
+  #content {
+      float: left;
+      width: 80%;
+      height: auto;
+      margin: 5px;
+      border: 1px solid #ccc;
+  }
+
+ article, aside
+ {
+     display: inline-block;
+     vertical-align: top;
+     text-align: justify;
+ }
+
+ article p, h1,h2
+ {
+     width: 625px;
+     margin-right: 15px;
+ }
+
+ article p, h1,h2
+ {
+     font-size: 0.8em;
+ }
+
+  #sidebar {
+      float: right;
+      width: 19%;
+      height: 350px;
+      border: 1px solid #ccc;
+  }
+
+
+ aside
+ {
+     position: relative;
+     width: 235px;
+     background-color:#999999;
+     box-shadow: 1px 2px 5px #1c1a19;
+     border-radius: 5px;
+     padding: 10px;
+     color: white;
+     font-size: 0.9em;
+ }
+
+  
+  #pied_page{
+	  
+	#width:100%;
+	height:140px;
+	background-color:#0033CC;
+	border-radius:3px;
+	color:white;
+	margin-top:3px;
+	padding:2px;
+	clear:both;
+  }
+
+
+ footer p, footer ul
+ {
+     font-size: 0.8em;
+
+ }
+ footer h1
+ {
+     font-size: 1.1em;
+ }
+ #tweet, #mes_photos, #mes_Contact {
+     display: inline-block;
+     vertical-align: top;
+ }
+ #tweet
+ {
+     width: 28%;
+ }
+ #mes_photos
+ {
+     width: 35%;
+ }
+ #mes_Contact
+ {
+     width: 31%;
+ }
+ #mes_photos img
+ {
+     border: 1px solid #181818;
+     margin-right: 2px;
+ }
+ #mes_Contact ul
+ {
+     display: inline-block;
+     vertical-align: top;
+     margin-top: 5px;
+     width: 48%;
+     padding-left:5px;
+ }
+ #mes_Contact a
+ {
+     text-decoration: none;
+     color: white;
+ }
+
+
+ #jeux_box{
+
+     background-color: #ffffff;
+     border: 1px solid #cccccc;
+     width: 255px;
+     height: auto;
+     margin: auto;
+     padding-bottom: 10px;
+ }
+ #jeu{
+
+     width: auto;
+     height: auto;
+     margin-left: 50px;
+
+ }
+ .Square {
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     font-size: 18pt;
+     font-weight: bold;
+
+ }
+ #pub_titre{
+     width: 100%;
+     height: 50px;
+     position: relative;
+
+
+ }
+ #message{
+     color:green;
+     font-size: medium;
+     text-align: center;
+     padding: 8px;
+
+
+ }
+
+ table td {
+     color: #025aa5;
+     font-weight: 300;
+
+
+ }
+ #monvideo{
+     width: 320px;
+     height: 240px;
+ }
+
+ #message{
+     float: left;
+     color: #01549b;
+     font-size: medium;
+     text-align: left;
+     padding: 8px;
+     margin-bottom: 20px;
+ }
+
+
+ #canvas {
+     position: relative;
+     border: 2px red;
+     /*transform-origin: 25%,25%;*/
+     margin-top: -45px;
+
+ }
+#div_canvas {
+    border: 2px solid blue;
+    position: relative;
+    width: 40%;
+    height: 40%;
+}
+ @-webkit-keyframes canvas {
+
+     from {transform: rotate(-90deg) scale(0.7,0.7);}
+     to {transform: rotate(180deg) scale(0.7,0.7);}
+ }
+
+ @-moz-keyframes canvas {
+
+     from {transform: rotate(-90deg) scale(0.7,0.7);}
+     to {transform: rotate(180deg) scale(0.7,0.7);}
+ }
+
+
+
+ .ratation {
+
+     -webkit-animation: canvas 4s ease-in-out infinite;
+
+ }
+
+ .ratation {
+
+     moz-webkit-animation: canvas 4s ease-in-out infinite;
+
+ }

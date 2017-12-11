@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr" manifest="manifest.manifest">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script >
+
+        function  saveStorage(){
+            var nom=document.getElementById('txt_nom').value;
+            localStorage.setItem('txt_nom',nom);
+            sessionStorage.setItem('txt_nom', nom);
+
+            var prenom=document.getElementById('txt_prenom').value;
+            localStorage.setItem('txt_prenom',prenom);
+            sessionStorage.setItem('txt_prenom',prenom);
+
+        }
+
+        function getStorage(){
+            var message= document.getElementById("messageStorage");
+            if(localStorage.getItem("txt_nom") !== null){
+                message.innerHTML="<h4>Bienvenue "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>";
+                //  document.write("<h4>Bienvenu "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>");
+            }else{
+                //   document.write("<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>");
+                message.innerHTML="<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>";
+            }
+
+
+
+        }
+
+    </script>
+
+</head>
+<body onload="getStorage();">
+
+<header id="entete">
+    <div id="logo">
+        <img class="logo" src="images/arcso_logo1.png" alt="Logo de ARCSO" />
+    </div>
+    <div id="menu">
+        <nav >
+            <ul>
+                <li><a href="multidedia.html">Jeux et Video</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="bloc_page">
+
+    <div id="banniere_image">
+        <img id="img-banner" src="images/contact.png"  alt="" />
+    </div>
+
+    <section id="contenu">
+        <article id="content">
+           <!-- <h1>Inscrivez-vous</h1>-->
+             <form id="myform" method="Post" action="#">
+                 <p id="messageStorage">
+                 </p>
+
+                <Legend>Identité personnel</legend>
+                <table>
+                    <tr>
+                        <th><label for="txt_nom">Nom : </label></th>
+                        <td colspan="2"><input type="text" id="txt_nom" pattern="^.*[A-Z]*[a-z]?$"  placeholder="saisir nom" required="required"/></td>
+
+                    </tr>
+
+                    <tr>
+                        <th><label for="txt_prenom">Prénom : </label></th>
+                        <td colspan="2"><input type="text" id="txt_prenom"  pattern="^.*[A-Z]*[a-z]?$"  placeholder="saisir votre prenom" required="required"/></td>
+
+                    </tr>
+
+                    <tr>
+                        <th><label for="txt_date">Date de Naissance : </label></th>
+                        <td colspan="2"><input type="date" id="txt_date" pattern="(^\d{2}-){2}\d{4}$" min="1950-01-01" max="2017-12-31" step="1" required="required"/></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="txt_list_domaines">Domaine d'activité : </label></th>
+                        <td colspan="2"><input type="text" id="txt_list_domaines" list="listDomaines" required="required"/></td>
+                        <datalist id="listDomaines">
+                            <option> Architecte</option>
+                            <option> topographe</option>
+                            <option> Professionnel</option>
+                            <option> Electricien</option>
+                            <option> Ingenieur</option>
+                            <option> plombiste</option>
+                            <option> Boss macon</option>
+                            <option> Chauffeur Camion</option>
+                            <option> Autres</option>
+                        </datalist>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Autres Informations</legend>
+                <p>
+                <table >
+                   <tr>
+                        <th><label for="txt_tel">Telephone : </label></th>
+                        <td colspan="2"><input type="tel" id="txt_tel" pattern="(^[^6-7][0-9]\d{2}[\-]\d{4}$)" required="required" placeholder="Exemple :22 22-22 22" /></td>
+
+                    </tr>
+                    <tr>
+                        <th><label for="txt_email">Email : </label></th>
+                        <td colspan="2"><input type="email" id="txt_email"   placeholder="Exemple:jhon@arcso.com" /></td>
+
+                    </tr>
+            </table>
+
+                 <input type="submit" onclick="saveStorage();"  id="btn_form" class="btn-succes" value="Soumettre" />
+                 <input type="reset"  class="btn-default" value="Reset" />
+
+                 </fieldset>
+             </form>
+
+        </article>
+        <div>
+            <img src="images/images%20(2).jpg"/>
+        </div>
+        <div>
+            <img src="images/images%20(3).jpg"/>
+        </div>
+    </section>
+
+
+
+
+    <footer id="pied_page">
+        <div id="tweet">
+            <h1>Conditions d'utilisation</h1>
+            <p>Confidentialité</p>
+            <p>Publicité</p>
+            <p>A Propos</p>
+
+
+        </div>
+        <div id="mes_photos">
+            <h1>Contactez-nous</h1>
+            <p><a href="https://www.facebook.com/">Cliquer--><img src="images/facebook.jpg"  height= "25"></a></p>
+        </div>
+        <div id="mes_Contact">
+            <h1>Mes Ingenieurs/Architectes</h1>
+            <ul>
+                <li><a href="#">FLEURIME Zacharie(3702-4837)</a></li>
+                <li><a href="#">PAULIN Ralph(3702-4863)</a></li>
+                <li><a href="#">RAPHAEL Josias(3640-0748)</a></li>
+                <li><a href="#">VALCIN Kervens(3783-7697</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

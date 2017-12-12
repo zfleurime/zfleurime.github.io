@@ -19,12 +19,15 @@
 
         function getStorage(){
             var message= document.getElementById("messageStorage");
+            var messageH = document.getElementById("messageHeader");
             if(localStorage.getItem("txt_nom") !== null){
                 message.innerHTML="<h4>Bienvenue "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>";
+                messageH.innerHTML = "<h4>Bienvenue "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>";
                 //  document.write("<h4>Bienvenu "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>");
             }else{
                 //   document.write("<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>");
                 message.innerHTML="<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>";
+                messageH.innerHTML = "<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>";
             }
 
 

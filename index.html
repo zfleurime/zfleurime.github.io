@@ -5,14 +5,31 @@
 		<title>Site du ARCSO</title>
 		<link rel="stylesheet" href="index.css" />
 		<script src="canvas.js"></script>
-		
+		<script type="text/javascript">
+			function getStorage(){
+            var messageH = document.getElementById("messageHeader");
+            if(localStorage.getItem("txt_nom") !== null){
+                messageH.innerHTML = "<h4>Bienvenue "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>";
+                //  document.write("<h4>Bienvenu "+localStorage.getItem("txt_nom")+" "+localStorage.getItem("txt_prenom")+"</h4>");
+            }else{
+                //   document.write("<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>");
+                messageH.innerHTML = "<h4>"+"Merci de visiter pour la première fois notre site"+"</h4>";
+            }
+
+
+
+        }
+		</script>
 	</head>
-	<body onload ="createLine();">
+	<body onload ="createLine();getStorage();">
 	
 	      <header id="entete">
 			<div id="logo">
                <img class="logo" src="images/arcso_logo1.png" alt="Logo de ARCSO" />
-
+            </div>
+    		<div style="width: 350px; left: 30%; position: absolute; padding: 0; height: 30px;">
+    			<p id="messageHeader" style="width: 450px !important; padding: 0; height: auto;"></p>
+    		</div>
 		   <div id="menu">
 			<nav >
                 <ul>

@@ -1,0 +1,96 @@
+<HTML lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Accueil</title>
+		<link rel="Stylesheet" type="text/css" href="css/style.css"/>
+		<!--<style type="text/css">
+			header h1{color: blue;}
+			nav a{color: green;}
+		</style>-->
+		
+	</head>
+	<body>
+		<div id="page">
+		<header>
+			<div id="i1"></div>
+			<h1>Mon site personnel</h1>
+			<h2>Site sur la programmation Java</h2>
+		
+		
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="#">Les base du langage</a></li>
+				<li><a href="#">Les frameworks de GUI</a></li>
+				<li><a href="#">JavaFx</a></li>
+				<li><a href="#">Introduction a JDBC</a></li>
+			</ul>
+		</nav>
+		
+		<section>
+			
+			<article>
+				<h1>S'inscrire</h1>
+				<!--<form action="#" method="post">-->
+				<form method="Post" action="listes.html"</form>
+				<fieldset>											<!--regroupement dans un formulaire(fieldset)-->
+				
+					<Legend>Identite</legend>
+					<table >
+						<tr>
+							<th><label for="nom">Nom</label></th>
+							<td colspan="2"><input type="text" id="nom" required/></td>
+							
+						</tr>
+						<tr>
+							<th><label for="prenom">Prénom</label></th>
+							<td colspan="2"><input type="text" id="prenom"/></td>
+							
+						</tr>
+						<tr>
+							<th><label for="sexe">Sexe</label></th>
+							<td>Feminin<input type="radio" name="radSexe" id="sf"/></td>
+							<td>Masculin<input type="radio" name="radSexe" id="sm"/></td>
+						</tr>
+						<tr>
+							<th><label for="sm">Langues parlées </label></th>
+							<td>Creole <input type="checkbox" id="sm"/></td>
+							<td>Francais <input type="checkbox" id="sf" checked /></td>
+						</tr>
+					</table>
+				</fieldset>	
+				<div id="a">
+				<p id="pa">ashjbfjknjv,mvnkjfffojjflkmv.kmllkjoju</p>
+					
+				</div>
+				<fieldset>
+					<legend>Formation</legend>
+					<p>
+						Adresse : <input type="search" name="web" id="idweb"/>
+						tel: <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"/>
+						
+					
+				</fieldset>
+				<p><input id="inp1" type="submit" value="Soumettre"/>
+					<input id="inp2" type="reset" value="Initialiser"/>
+				</p>
+			</article>
+			<!--<aside>
+				<h1>Pour s'inscrire a la conference sur les beans</h1>
+				<p> aasdf ghj kla sdf gh jkl poiuy trewq dgjhk bhgty jlkjkhf</p>
+			</aside>-->
+			<article>
+				<h1>Les plateformes de Mapping Objet/Relationnel</h1>
+				<p> aasdf ghj kla sdf gh jkl poiuy trewq</p>
+				<p> aasdf ghj kla sdf gh jkl poiuy trewq</p>
+				<p> aasdf ghj kla sdf gh jkl poiuy trewq</p>
+			</article>
+		</section>
+		
+		<footer>
+			<p id="cop">CopyRight(c) MBDS 2015</p>
+		</footer>
+		</div>
+	</body>
+</HTML>
